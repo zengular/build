@@ -7,7 +7,7 @@ class VersionBumpPlugin {
 			let fs = require('fs');
 			if (fs.existsSync(this.options.file)) version = fs.readFileSync(this.options.file);
 			version++;
-			fs.writeFileSync(this.options.file, version);
+			fs.writeFileSync(this.options.file, version.toString());
 		}
 		for (let i in this.options.hooks) this.options.hooks[i](version);
 	}

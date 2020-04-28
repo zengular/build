@@ -1,32 +1,34 @@
 {
   "_args": [
     [
-      "zengular-build@2.0.0",
-      "/Users/elvis/dev/htdocs/gmrnxt"
+      "zengular-build@3.1.6",
+      "/Users/elvis/work/htdocs/psycho"
     ]
   ],
-  "_from": "zengular-build@2.0.0",
-  "_id": "zengular-build@2.0.0",
+  "_development": true,
+  "_from": "zengular-build@3.1.6",
+  "_id": "zengular-build@3.1.6",
   "_inBundle": false,
-  "_integrity": "sha512-q7/jBQgljZNfLBQlnjIj5yGQMq6WLMknhdJB4OAVYVaWrHDZWrTmdFxI1SqV3oQwxYTQ5HQFp6PEEf5TTs6FKA==",
+  "_integrity": "sha512-hWKVfrwaJG9EzmU1dX6NE/z5IxgUn5rN1f/WPrmO0RN8BaiNGY9qtGyH8k3iCpL8W4fkohSP1Jo8C4TX1RYKYw==",
   "_location": "/zengular-build",
   "_phantomChildren": {},
   "_requested": {
     "type": "version",
     "registry": true,
-    "raw": "zengular-build@2.0.0",
+    "raw": "zengular-build@3.1.6",
     "name": "zengular-build",
     "escapedName": "zengular-build",
-    "rawSpec": "2.0.0",
+    "rawSpec": "3.1.6",
     "saveSpec": null,
-    "fetchSpec": "2.0.0"
+    "fetchSpec": "3.1.6"
   },
   "_requiredBy": [
-    "/"
+    "#DEV:/"
   ],
-  "_resolved": "https://registry.npmjs.org/zengular-build/-/zengular-build-2.0.0.tgz",
-  "_spec": "2.0.0",
-  "_where": "/Users/elvis/dev/htdocs/gmrnxt",
+  "_resolved": "https://registry.npmjs.org/zengular-build/-/zengular-build-3.1.6.tgz",
+  "_shasum": "217653f02f79371f48be3bb1aa0cec940310d56b",
+  "_spec": "3.1.6",
+  "_where": "/Users/elvis/work/htdocs/psycho",
   "author": {
     "name": "Gergely Laborci"
   },
@@ -37,33 +39,31 @@
     "@babel/plugin-proposal-object-rest-spread": "^7.5.5",
     "@babel/plugin-proposal-optional-chaining": "^7.0.0",
     "@babel/preset-env": "^7.5.5",
+    "autoprefixer": "^9.7.2",
     "babel-loader": "^8.0.4",
     "copy": "^0.3.0",
+    "copy-webpack-plugin": "^5.0.5",
     "css-loader": "^0.28.4",
     "file-loader": "^0.11.2",
     "get-google-fonts": "^1.2.0",
     "glob": "^7.1.4",
-    "gulp": "^4.0.2",
-    "gulp-autoprefixer": "^3.1.0",
-    "gulp-browserify": "^0.5.1",
-    "gulp-concat": "^2.6.1",
-    "gulp-google-webfonts": "^2.0.0",
-    "gulp-less": "^3.0.5",
-    "gulp-sourcemaps": "^1.9.1",
-    "gulp-uglifycss": "^1.1.0",
-    "gulp-watch": "^4.3.5",
     "html-loader": "^0.5.5",
     "less": "^2.7.2",
     "less-loader": "^4.0.5",
     "load-css-file": "^1.0.0",
     "load-js": "^1.2.0",
+    "mini-css-extract-plugin": "^0.8.0",
+    "node-sass": "^4.13.0",
+    "postcss-loader": "^3.0.0",
+    "sass-loader": "^8.0.0",
     "style-loader": "^0.18.2",
     "twig-loader": "^0.4.1",
     "watchify": "^3.9.0",
     "webpack": "^4.38.0"
   },
+  "deprecated": false,
   "license": "MIT",
   "main": "src/zengular-build.js",
   "name": "zengular-build",
-  "version": "3.1.0"
+  "version": "3.1.6"
 }

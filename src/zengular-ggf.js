@@ -3,6 +3,8 @@
 const GetGoogleFonts = require('get-google-fonts');
 const path = require('path');
 let cfg = require(process.env.PWD + '/package.json')['google-fonts'];
+if(typeof cfg === 'string') cfg = require(process.env.INIT_CWD + '/' + cfg);
+
 
 if(!(cfg instanceof Array)) cfg = [cfg];
 

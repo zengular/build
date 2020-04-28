@@ -1,12 +1,15 @@
 let path = require("path");
 let VersionBumpPlugin = require('./version-bump-plugin');
-let GGF = require("./")
 
 class ZengularBuild {
 
 	constructor(cfg = false) {
 
-		if (cfg === false) cfg = require(process.env.INIT_CWD + '/package.json')['z-build'];
+		if (cfg === false) {
+			cfg = require(process.env.INIT_CWD + '/package.json')['z-build'];
+			if(typeof cfg === 'string') cfg = require(process.env.INIT_CWD + '/' + cfg);
+		}
+
 		this.root = process.env.INIT_CWD;
 
 		this.devtool = typeof cfg.devtool !== "undefined" ? cfg.devtool : false;
